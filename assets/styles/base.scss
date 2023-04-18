@@ -1,0 +1,40 @@
+@import "variables";
+@import "reset";
+@import "header";
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+.watch {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 205px 0 205px 150px;
+  margin-bottom: 40px;
+  background: url("../imgs/main-bg.jpg") no-repeat center;
+  background-size: cover;
+  overflow: hidden;
+  &__title {
+    display: block;
+    max-width: 793px;
+    padding-left: 210px;
+    font-family: $roboto;
+    font-weight: 900;
+    font-size: 89px;
+    color: $base;
+  }
+  .social {
+    &__list {
+      position: absolute;
+      bottom: 110px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    &__item {
+      padding-top: 15px;
+    }
+  }
+}
